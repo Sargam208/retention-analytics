@@ -1,0 +1,53 @@
+{
+  "n_customers": 5852,
+  "features": [
+    "recency_days",
+    "frequency",
+    "monetary",
+    "tenure_days",
+    "avg_order_value",
+    "n_products"
+  ],
+  "pca_components": 3,
+  "pca_variance_kept": 0.9110440715393301,
+  "chosen_k": 3,
+  "silhouette": 0.36880180043435623,
+  "segments": [
+    {
+      "segment": "Champions",
+      "customers": 2337,
+      "median_recency_days": 32.0,
+      "median_frequency": 8.0,
+      "median_monetary": 2855.17,
+      "mean_avg_order_value": 535.4713222554511,
+      "median_tenure_days": 643.0,
+      "revenue": 15136817.7,
+      "share_customers": 0.39935064935064934,
+      "share_revenue": 0.8868527890750552
+    },
+    {
+      "segment": "Hibernating",
+      "customers": 2667,
+      "median_recency_days": 382.0,
+      "median_frequency": 2.0,
+      "median_monetary": 400.43999999999994,
+      "mean_avg_order_value": 264.05874989584635,
+      "median_tenure_days": 515.0,
+      "revenue": 1398889.84,
+      "share_customers": 0.4557416267942584,
+      "share_revenue": 0.08195972104577555
+    },
+    {
+      "segment": "New / Promising",
+      "customers": 848,
+      "median_recency_days": 31.0,
+      "median_frequency": 1.0,
+      "median_monetary": 421.36,
+      "mean_avg_order_value": 346.5626552813343,
+      "median_tenure_days": 67.0,
+      "revenue": 532308.58,
+      "share_customers": 0.14490772385509226,
+      "share_revenue": 0.031187489879169392
+    }
+  ]
+}

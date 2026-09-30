@@ -1,0 +1,7 @@
+# Lightweight deps for deploying only the dashboard (Streamlit Community Cloud
+# picks up this file because it sits next to app.py).
+streamlit>=1.40
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+plotly>=5.18

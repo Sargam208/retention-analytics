@@ -1,0 +1,72 @@
+{
+  "n_users": 90189,
+  "srm": {
+    "n_control": 44700,
+    "n_treatment": 45489,
+    "share_treatment": 0.5043741476233243,
+    "chi2": 6.9024049496058275,
+    "p_value": 0.008607987810836243,
+    "srm_detected": false
+  },
+  "data_quality": {
+    "extreme_outliers": 1,
+    "share_never_played": 0.0442847797403231
+  },
+  "results": [
+    {
+      "metric": "retention_1",
+      "control_rate": 0.4481879194630872,
+      "treatment_rate": 0.44228274967574577,
+      "abs_diff": -0.005905169787341458,
+      "rel_lift": -0.01317565585974659,
+      "z_stat": -1.7840862247974725,
+      "p_value_z": 0.07440965529691913,
+      "ci_wald_low": -0.012392439449445219,
+      "ci_wald_high": 0.0005820998747623034,
+      "ci_boot_low": -0.012522074958456633,
+      "ci_boot_high": 0.0006061694094936228,
+      "p_value_bootstrap": 0.0694,
+      "prob_treatment_worse": 0.9653,
+      "cohens_h": -0.011881898259223478,
+      "mde_abs_at_80_power": 0.00928742694843393,
+      "n_per_group_needed_for_observed_effect": 111190.0,
+      "p_value_holm": 0.07440965529691913,
+      "significant_after_holm": false
+    },
+    {
+      "metric": "retention_7",
+      "control_rate": 0.19020134228187918,
+      "treatment_rate": 0.18200004396667327,
+      "abs_diff": -0.008201298315205913,
+      "rel_lift": -0.043119034896460164,
+      "z_stat": -3.164358912748191,
+      "p_value_z": 0.0015542499756143289,
+      "ci_wald_low": -0.013281552418885546,
+      "ci_wald_high": -0.00312104421152628,
+      "ci_boot_low": -0.0132444296954452,
+      "ci_boot_high": -0.00307428991978443,
+      "p_value_bootstrap": 0.002,
+      "prob_treatment_worse": 0.999,
+      "cohens_h": -0.021074001016365917,
+      "mde_abs_at_80_power": 0.007376150061811748,
+      "n_per_group_needed_for_observed_effect": 35347.0,
+      "p_value_holm": 0.0031084999512286577,
+      "significant_after_holm": true
+    }
+  ],
+  "engagement_guardrail": {
+    "median_control": 17.0,
+    "median_treatment": 16.0,
+    "mean_control": 52.45626398210291,
+    "mean_treatment": 51.29877552814966,
+    "mannwhitney_p": 0.05020880772044255,
+    "median_diff_ci": [
+      -1.0,
+      0.0
+    ]
+  },
+  "decision": "Keep the gate at level 30. Moving it to 40 lowers 7-day retention by 0.82 pp (-4.3% relative).",
+  "alpha": 0.05,
+  "power": 0.8,
+  "n_bootstrap": 10000
+}

@@ -1,0 +1,35 @@
+{
+  "best_model": "Logistic Regression",
+  "test": {
+    "roc_auc": 0.7612709146508216,
+    "pr_auc": 0.7285050187913911,
+    "brier": 0.19848966992601635,
+    "threshold": 0.30290588470832575,
+    "precision": 0.6071882951653944,
+    "recall": 0.9017477562588568,
+    "f1": 0.7257175441931192,
+    "precision_top20": 0.7732558139534884,
+    "capture_top20": 0.3141237600377893,
+    "lift_top20": 1.5713493205611275,
+    "cv_roc_auc": 0.7793290043290044,
+    "cv_pr_auc": 0.824883680614622,
+    "baseline_churn_rate": 0.4920966992096699
+  },
+  "recency_only_baseline": {
+    "roc_auc": 0.7073622165125079,
+    "pr_auc": 0.6588135959221868
+  },
+  "top_features": [
+    "n_active_months",
+    "frequency_90d",
+    "monetary_90d",
+    "tenure_days",
+    "monetary_prev_90d",
+    "spend_trend",
+    "avg_items_per_order",
+    "avg_order_value"
+  ],
+  "n_train": 4283,
+  "n_test": 4302,
+  "n_scored_current": 4261
+}

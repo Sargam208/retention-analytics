@@ -1,0 +1,14 @@
+# raw data is large + licensed separately -> download with data/download_data.py
+data/raw/*
+!data/raw/.gitkeep
+outputs/models/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# personal notes
+INTERVIEW_PREP.md
+
+# OS / editor
+.DS_Store
+.venv/

@@ -1,0 +1,57 @@
+{
+  "cleaning_steps": [
+    {
+      "step": "raw line items",
+      "rows_after": 1067371,
+      "rows_removed": 0
+    },
+    {
+      "step": "drop exact duplicate rows",
+      "rows_after": 1033034,
+      "rows_removed": 34337
+    },
+    {
+      "step": "drop rows without customer_id (guest checkouts)",
+      "rows_after": 797883,
+      "rows_removed": 235151
+    },
+    {
+      "step": "drop unparseable dates",
+      "rows_after": 797883,
+      "rows_removed": 0
+    },
+    {
+      "step": "drop price <= 0 (free samples, bad-debt adjustments)",
+      "rows_after": 797813,
+      "rows_removed": 70
+    },
+    {
+      "step": "keep product stock codes only",
+      "rows_after": 794161,
+      "rows_removed": 3652
+    },
+    {
+      "step": "drop sign-inconsistent quantity rows",
+      "rows_after": 794161,
+      "rows_removed": 0
+    }
+  ],
+  "raw_rows": 1067371,
+  "clean_rows": 794161,
+  "data_start": "2009-12-01",
+  "data_end": "2011-12-09",
+  "snapshot_date": "2011-12-10",
+  "train_cutoff": "2011-03-13",
+  "test_cutoff": "2011-09-11",
+  "churn_horizon_days": 90,
+  "active_lookback_days": 365,
+  "train_customers": 4283,
+  "test_customers": 4302,
+  "train_churn_rate": 0.6275974784029885,
+  "test_churn_rate": 0.4920966992096699,
+  "customers": 5875,
+  "invoices": 43876,
+  "products": 4633,
+  "countries": 41,
+  "gross_revenue": 17068016.119997736
+}

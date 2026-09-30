@@ -1,0 +1,5 @@
+version,metric,rate
+gate_30,retention_1,0.4481879194630872
+gate_40,retention_1,0.44228274967574577
+gate_30,retention_7,0.19020134228187918
+gate_40,retention_7,0.18200004396667327

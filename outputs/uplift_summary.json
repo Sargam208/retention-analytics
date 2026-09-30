@@ -1,0 +1,18 @@
+{
+  "treatment": "any",
+  "target": "visit",
+  "n_train": 44800,
+  "n_test": 19200,
+  "ate_test": {
+    "treated_rate": 0.16707002888593958,
+    "control_rate": 0.10608668439993742,
+    "ate": 0.060983344486002164,
+    "ci_low": 0.05104661521460854,
+    "ci_high": 0.07092007375739579
+  },
+  "best_model": "S-learner",
+  "best_qini_coefficient": 0.005231676192829038,
+  "best_uplift_at_30": 0.08176458706947143,
+  "best_share_of_gain_top30": 0.39870323208457165,
+  "headline": "Targeting the top 30% ranked by the S-learner captures 40% of the incremental visits from mailing everyone, with uplift 8.2 pp vs an average of 6.1 pp."
+}
